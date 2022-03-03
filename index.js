@@ -6,9 +6,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const mongoString = process.env.DATABASE_URL;
 
+// The database to use when authenticating with user and pass. In MongoDB, users are scoped to a database.
+const authenticationDatabaseName = process.env.AUTHENTICATION_DATABASE_NAME;
+
 // Let's connect the database to our server using Mongoose.
 const options = {
-  authSource: "admin"
+  authSource: authenticationDatabaseName
 }
 mongoose.connect(mongoString, options);
 const database = mongoose.connection;
