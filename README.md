@@ -13,16 +13,16 @@ For development, you will only need Node.js and a node global package, installed
 - #### Node installation on Windows
 
   Just go on [official Node.js website](https://nodejs.org/) and download the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+  Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
 - #### Node installation on Ubuntu
 
   You can install nodejs and npm easily with apt install, just run the following commands.
 
-    ```bash
-      sudo apt install nodejs
-      sudo apt install npm
-    ```
+  ```bash
+    sudo apt install nodejs
+    sudo apt install npm
+  ```
 
 - #### Other Operating Systems
 
@@ -30,28 +30,28 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 If the installation was successful, you should be able to run the following command.
 
-  ```bash
-    node --version
-    v16.14.0
-  ```
+```bash
+  node --version
+  v16.14.0
+```
 
-  ```bash
-    npm --version
-    8.5.2
-  ```
+```bash
+  npm --version
+  8.5.2
+```
 
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
-  ```bash
-    npm install npm -g
-  ```
+```bash
+  npm install npm -g
+```
 
 ---
 
 ## Install
 
-  ```bash
-    git clone https://github.com/kishan-aghera/node-crud-api
-    cd node-crud-api
-    npm install
-  ```
+```bash
+  git clone https://github.com/kishan-aghera/node-crud-api.git
+  cd node-crud-api
+  npm install
+```
