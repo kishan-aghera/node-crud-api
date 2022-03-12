@@ -25,11 +25,16 @@ database.once('connected', () => {
   console.log('Database Connected');
 })
 
+
 // Transfer the contents of Express into a new constant called app
 const app = express();
 
 // Let's listen the changes of this file on port 3000.
 app.use(express.json());
+
+// Importing routes file and using routes in this app.
+const routes = require('./routes/routes');
+app.use('/api', routes)
 
 app.listen(3000, () => {
   console.log(`Server Started at ${3000}`)
